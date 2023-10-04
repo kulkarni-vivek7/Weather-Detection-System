@@ -15,7 +15,7 @@ def currentTime(utc):
     return local_time
 
 def showWeather():
-    api = '810ffed7d29bdf1e1ef784394c3d6584'
+    api = '810ffed7d29bdf1e1ef784394c3d6584' #Place Your API Key here
     city_name = city_value.get()
     weatherURL = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api}'
     responce = requests.get(weatherURL)
